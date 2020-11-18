@@ -1,0 +1,100 @@
+@import "../../style//variables.scss";
+
+.approvalContainer {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.approvalContainer h1 {
+  font-family: open-sans, sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  margin-bottom: 1rem;
+  font-size: 2rem;
+}
+
+.approvalLast {
+  margin-top: 1rem;
+  font-size: 2rem;
+}
+
+.optionsContainer {
+  display: inline-block;
+}
+
+.approvalContainer button {
+  margin: 0 auto;
+
+  font-family: open-sans, sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  color: $purple;
+  text-transform: uppercase;
+  width: fit-content;
+  font-size: 1rem;
+  text-align: center;
+  background-color: transparent;
+  cursor: pointer;
+  outline: none;
+  border: 3px $purple solid;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  height: 3rem;
+  border-radius: 3rem;
+  transition: 0.3s ease all;
+  justify-content: center;
+  align-items: center;
+
+  &:hover {
+    background-color: $purple;
+    color: white;
+  }
+
+  &:active {
+    background-color: $purple;
+    color: white;
+  }
+
+  &:disabled {
+    opacity: 0;
+  }
+}
+
+.optionsContainer h3 {
+  color: $purple;
+}
+
+/*Media Queries*/
+/* Larger than tablet (also point when grid becomes active) */
+@media (min-width: 550px) {
+  .approvalContainer {
+    text-align: left;
+  }
+  .optionsContainer h3 {
+    display: inline-block;
+    margin-left: 2rem;
+    margin-right: 2rem;
+  }
+  .optionsContainer button {
+    display: inline-block;
+  }
+}
+
+/* Larger than tablet */
+@media (min-width: 750px) {
+}
+
+/* Larger than desktop */
+@media (min-width: 1000px) {
+}
+
+/* Larger than Desktop HD */
+@media (min-width: 1200px) {
+}
+
+/* For TV Screens & Projectors */
+@media (min-width: 2000px) {
+}

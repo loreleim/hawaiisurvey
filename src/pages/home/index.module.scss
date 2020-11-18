@@ -1,0 +1,82 @@
+@import "../../style/variables.scss";
+
+.homeText {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.homeText h2 {
+  text-transform: uppercase;
+}
+
+.nextButton {
+  font-family: open-sans, sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  color: white;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  width: 10rem;
+  font-size: 1rem;
+  text-align: center;
+  background-color: $purple;
+  cursor: pointer;
+  outline: none;
+  border: none;
+  height: 3rem;
+  border-radius: 3rem;
+  transition: 0.3s ease all;
+
+  left: 50%;
+  bottom: 10vh;
+  transform: translate(-50%, 0);
+  position: absolute;
+
+  &:hover {
+    background-color: darken($purple, 20%);
+  }
+
+  &:active {
+    background-color: darken($purple, 30%);
+  }
+
+  &:disabled {
+    opacity: 0;
+  }
+}
+
+/*Media Queries*/
+/* Larger than tablet (also point when grid becomes active) */
+@media (min-width: 550px) {
+}
+
+/* Larger than tablet */
+@media (min-width: 750px) {
+}
+
+/* Larger than desktop */
+@media (min-width: 1000px) {
+  .homeText h1 {
+    font-size: 5rem;
+    margin-bottom: 1rem;
+  }
+  .homeText h2 {
+    font-size: 2rem;
+    letter-spacing: 7px;
+    margin-bottom: 1rem;
+  }
+  .homeText p {
+    font-size: 1.5rem;
+  }
+}
+
+/* Larger than Desktop HD */
+@media (min-width: 1200px) {
+}
+
+/* For TV Screens & Projectors */
+@media (min-width: 2000px) {
+}

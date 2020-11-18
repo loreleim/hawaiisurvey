@@ -1,0 +1,46 @@
+@import "../../style/variables.scss";
+
+.lastContainer {
+  padding-top: 10vh;
+  width: fit-content;
+  margin: 0 auto;
+}
+
+.lastContainer table {
+  margin: 0 auto;
+}
+
+.backContainer button {
+  font-family: open-sans, sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  color: white;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  font-size: 1rem;
+  text-align: center;
+  background-color: $purple;
+  cursor: pointer;
+  outline: none;
+  border: none;
+  width: 3rem;
+  height: 3rem;
+  border-radius: 3rem;
+  transition: 0.3s ease all;
+
+  left: 1rem;
+  bottom: 1rem;
+  position: absolute;
+
+  &:hover {
+    background-color: darken($purple, 20%);
+  }
+
+  &:active {
+    background-color: darken($purple, 30%);
+  }
+
+  &:disabled {
+    opacity: 0;
+  }
+}

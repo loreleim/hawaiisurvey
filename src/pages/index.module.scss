@@ -1,0 +1,56 @@
+@import "../style/variables.scss";
+
+.contextContainer {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.contextContainer h1 {
+  font-family: open-sans, sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  margin-bottom: 1rem;
+}
+
+.contextContainer button {
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 1rem;
+
+  font-family: open-sans, sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  color: $purple;
+  text-transform: uppercase;
+  width: fit-content;
+  font-size: 1rem;
+  text-align: center;
+  background-color: transparent;
+  cursor: pointer;
+  outline: none;
+  border: 3px $purple solid;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  height: 3rem;
+  border-radius: 3rem;
+  transition: 0.3s ease all;
+  justify-content: center;
+  align-items: center;
+
+  &:hover {
+    background-color: $purple;
+    color: white;
+  }
+
+  &:active {
+    background-color: $purple;
+    color: white;
+  }
+
+  &:disabled {
+    opacity: 0;
+  }
+}
