@@ -9,7 +9,8 @@ export default class Context extends React.Component {
     return (
       <div className={style.contextContainer}>
           <h1>{store.context[0]}</h1>
-          <button onClick={this.props.contextNext}>Geff um, we go 🡒</button>
+          <p>You will be able to review &amp; edit your responses at the end of this form.</p>
+          <button onClick={this.props.contextNext}>Geff um, we go →</button>
       </div>
     );
   }
