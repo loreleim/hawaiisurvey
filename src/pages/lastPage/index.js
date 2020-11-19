@@ -7,6 +7,9 @@ export default class Last extends React.Component {
   render() {
 
     console.log(store.userResponses)
+    const submitForm = (e) => {
+      }
+    }
 
     return (
       <div className={style.lastContainer}>
@@ -24,6 +27,8 @@ export default class Last extends React.Component {
           ))}
         </table>
         <div className={style.backContainer}><button onClick={this.props.backFunction}>🡐</button></div>
+        <form onSubmit={submitForm}>
+        </form>
       </div>
     );
   }
