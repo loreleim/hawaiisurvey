@@ -15,6 +15,7 @@ export default class Last extends React.Component {
       }
       if (email.value === emailConfirm.value) {
         store.userResponses.push(email.value);
+        this.props.renderThank();
       }
     }
 
