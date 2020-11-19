@@ -15,6 +15,8 @@ export default class MultiSelect extends React.Component {
         <div className={style.demographicQuestions}>
               </div>
           ))}
+          </div>
+          <button onClick={() => this.props.nextFunction(this.state.ethnicityArray)}>Looks Good</button>
         </div>
       </div>
     );
