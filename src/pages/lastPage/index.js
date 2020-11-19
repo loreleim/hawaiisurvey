@@ -27,9 +27,9 @@ export default class Last extends React.Component {
             <th>Question</th>
             <th>Answer</th>
           </tr>
-          {store.userResponses.map((userResponses, i) => (
+          {store.userResponses.map((userResponses, index) => (
             <tr>
-              <td>{i}</td>
+              <td>{store.reviewQuestions[index]}</td>
               <td>{userResponses}</td>
             </tr>
           ))}
