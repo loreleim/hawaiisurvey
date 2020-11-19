@@ -26,6 +26,12 @@ export default class MultiSelect extends React.Component {
     return (
       <div className={style.demographicContainer}>
         <div className={style.demographicQuestions}>
+          <h2>{store.multiSelect[0].questionText}</h2>
+          <div className={style.leftCenter}>
+          {store.multiSelect[0].answerOptions.map((answerOptions, i) => (
+              <div key={i} className={style.checkboxContainer}>
+                <input type="checkbox" value={answerOptions.answerText} onChange={ethnicityCheck.bind(this)}></input>
+                <span>{answerOptions.answerText}</span>
               </div>
           ))}
           </div>
