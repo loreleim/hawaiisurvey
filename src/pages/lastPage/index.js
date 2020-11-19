@@ -21,7 +21,7 @@ export default class Last extends React.Component {
 
     return (
       <div className={style.lastContainer}>
-        <h2>Review your responses</h2>
+        <h2>Review or edit your responses</h2>
         <table>
           <tr>
             <th>Question</th>
