@@ -40,13 +40,13 @@ class Database {
           questionText:
             "How do you describe your ethnicity? Select all that apply",
           answerOptions: [
-            { answerText: "Indigenous Person(s) / Native American" },
+            { answerText: "Indigenous Person(s)" },
             { answerText: "Asian" },
             { answerText: "Black / African American" },
-            { answerText: "Native Hawaiian or other Pacific Islander" },
+            { answerText: "Pacific Islander" },
             { answerText: "Mixed Race" },
             { answerText: "Unknown" },
-            { answerText: "Other/Prefer to Self Describe" },
+            { answerText: "Prefer to Self Describe" },
             { answerText: "Do not wish to answer" }
           ]
         }
