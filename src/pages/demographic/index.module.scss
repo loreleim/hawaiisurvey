@@ -15,6 +15,10 @@
   margin-bottom: 1rem;
 }
 
+.demographicQuestions h2 {
+  margin-bottom: 2rem;
+}
+
 .demographicQuestions p {
   margin-bottom: 1rem;
 }
@@ -94,24 +98,42 @@
   }
 }
 
-.checkboxContainer input {
-  cursor: pointer;
-  opacity: 0;
-  position: absolute;
+.checkboxContainer {
+  font-family: open-sans, sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  text-align: left;
 }
 
-.checkboxContainer .checked {
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 30px;
-  width: 30px;
-  background-color: white;
-  border-radius: 50%;
+.leftCenter {
+  width: fit-content;
+  margin-bottom: 2rem;
+  display: inline-block;
+}
 
-  &:hover {
-    background-color: red;
+.leftCenter span {
+  margin-left: 0.5rem;
+  font-size: 1.25rem;
+}
+
+.leftCenter input[type="checkbox"] {
+  -webkit-appearance: none;
+  width: 1.5rem;
+  height: 1.5rem;
+  background: white;
+  border-radius: 1.5rem;
+  border: 2px solid $purple;
+  position: relative;
+  top: 5px;
+  cursor: pointer;
+
+  &:checked {
+    background: $purple;
   }
+}
+
+.checkboxContainer {
+  margin-bottom: 0.25rem;
 }
 
 /*Media Queries*/

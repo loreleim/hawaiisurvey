@@ -4,10 +4,39 @@
   padding-top: 10vh;
   width: fit-content;
   margin: 0 auto;
+  padding: 2rem;
+}
+
+.lastContainer h2 {
+  text-align: center;
+  margin-bottom: 2rem;
 }
 
 .lastContainer table {
   margin: 0 auto;
+  table-layout: fixed;
+  font-family: open-sans, sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  margin-bottom: 2rem;
+}
+
+.lastContainer table tr th,
+td {
+  padding: 0.5rem;
+  width: 100px;
+}
+
+.lastContainer table tr th:nth-of-type(2) {
+  text-align: right;
+}
+
+.lastContainer table tr td:nth-of-type(2) {
+  text-align: right;
+}
+
+.lastContainer tr:nth-child(even) {
+  background-color: darken($grey, 20%);
 }
 
 .backContainer button {
@@ -43,4 +72,107 @@
   &:disabled {
     opacity: 0;
   }
+}
+
+.emailContainer {
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.emailContainer label {
+  font-family: open-sans, sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  color: $purple;
+}
+
+.emailInputs {
+  width: 100%;
+  display: block;
+  margin: 0 auto;
+
+  font-family: open-sans, sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  color: $purple;
+  text-transform: uppercase;
+  width: fit-content;
+  font-size: 1rem;
+  text-align: center;
+  background-color: transparent;
+  cursor: pointer;
+  outline: none;
+  border: 3px $purple solid;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  height: 3rem;
+  border-radius: 3rem;
+  transition: 0.3s ease all;
+  justify-content: center;
+  align-items: center;
+
+  &:active {
+    background-color: darken($purple, 20%);
+    border: 3px darken($purple, 20%) solid;
+  }
+}
+
+.submitButton {
+  display: block;
+  margin: 0 auto;
+  margin-top: 1rem;
+
+  font-family: open-sans, sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  color: white;
+  text-transform: uppercase;
+  width: fit-content;
+  font-size: 1rem;
+  text-align: center;
+  background-color: $purple;
+  cursor: pointer;
+  outline: none;
+  border: 3px $purple solid;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  height: 3rem;
+  border-radius: 3rem;
+  transition: 0.3s ease all;
+  justify-content: center;
+  align-items: center;
+
+  &:hover {
+    background-color: darken($purple, 20%);
+    border: 3px darken($purple, 20%) solid;
+  }
+
+  &:active {
+    background-color: darken($purple, 20%);
+    border: 3px darken($purple, 20%) solid;
+  }
+}
+
+/*Media Queries*/
+/* Larger than tablet (also point when grid becomes active) */
+@media (min-width: 550px) {
+}
+
+/* Larger than tablet */
+@media (min-width: 750px) {
+  .giveawayContainer {
+    max-width: 600px;
+  }
+}
+
+/* Larger than desktop */
+@media (min-width: 1000px) {
+}
+
+/* Larger than Desktop HD */
+@media (min-width: 1200px) {
+}
+
+/* For TV Screens & Projectors */
+@media (min-width: 2000px) {
 }

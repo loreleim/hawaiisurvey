@@ -1,6 +1,6 @@
 @import "../../style//variables.scss";
 
-.approvalContainer {
+.multiApprovalContainer {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -8,7 +8,35 @@
   text-align: center;
 }
 
-.approvalContainer h1 {
+.approvalContainer {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  -webkit-user-select: none;
+}
+
+.approval2Container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  -webkit-user-select: none;
+}
+
+.tourismContainer {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  -webkit-user-select: none;
+}
+
+.approvalContainer h1,
+.approval2Container h1 {
   font-family: open-sans, sans-serif;
   font-weight: 700;
   font-style: normal;
@@ -16,16 +44,89 @@
   font-size: 2rem;
 }
 
+#orContainer :nth-of-type(0) {
+  color: red;
+}
+
+.approveOrDisapprove {
+  margin-bottom: 1rem;
+}
+
+.template2 {
+  margin: 0 auto;
+}
+
+.tourismContainer a {
+  color: $purple;
+
+  &:visited {
+    color: $purple;
+  }
+}
+
+.tourismContainer h2 {
+  margin-bottom: 1rem;
+}
+
 .approvalLast {
-  margin-top: 1rem;
   font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+#tourismContainer {
+  text-align: center;
+}
+
+.linkData {
+  margin-bottom: 1rem;
+}
+
+#tourismGroups button {
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 0.5rem;
+
+  font-family: open-sans, sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  color: $purple;
+  text-transform: uppercase;
+  width: fit-content;
+  font-size: 1rem;
+  text-align: center;
+  background-color: transparent;
+  cursor: pointer;
+  outline: none;
+  border: 3px $purple solid;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  height: 3rem;
+  border-radius: 3rem;
+  transition: 0.3s ease all;
+  justify-content: center;
+  align-items: center;
+
+  &:hover {
+    background-color: $purple;
+    color: white;
+  }
+
+  &:active {
+    background-color: $purple;
+    color: white;
+  }
+
+  &:disabled {
+    opacity: 0;
+  }
 }
 
 .optionsContainer {
   display: inline-block;
 }
 
-.approvalContainer button {
+.approvalContainer button,
+.approval2Container button {
   margin: 0 auto;
 
   font-family: open-sans, sans-serif;
@@ -65,6 +166,41 @@
 
 .optionsContainer h3 {
   color: $purple;
+}
+
+.buttonContainer button {
+  font-family: open-sans, sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  color: white;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  font-size: 1rem;
+  text-align: center;
+  background-color: $purple;
+  cursor: pointer;
+  outline: none;
+  border: none;
+  width: 3rem;
+  height: 3rem;
+  border-radius: 3rem;
+  transition: 0.3s ease all;
+
+  left: 1rem;
+  bottom: 1rem;
+  position: absolute;
+
+  &:hover {
+    background-color: darken($purple, 20%);
+  }
+
+  &:active {
+    background-color: darken($purple, 30%);
+  }
+
+  &:disabled {
+    opacity: 0;
+  }
 }
 
 /*Media Queries*/
