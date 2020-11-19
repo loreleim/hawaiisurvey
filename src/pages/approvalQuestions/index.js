@@ -14,6 +14,7 @@ export default class Approval extends React.Component {
             {store.options.map((options, index) => (
               <div key={options} className={style.optionsContainer}>
                 <button onClick={() => this.props.nextPage(options)}>{options}</button>
+                <h3>{index === 1 ? "" : "or"}</h3>
               </div>
             ))}
           </div>

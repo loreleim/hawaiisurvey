@@ -14,6 +14,7 @@ export default class MarineApproval extends React.Component {
             {store.options.map((options, index) => (
               <div key={options} className={style.optionsContainer}>
                 <button onClick={() => this.props.nextPage(options)}>{options}</button>
+                {index === 0 ? <h3>or</h3> : null}
               </div>
             ))}
           </div>
