@@ -9,6 +9,9 @@ export default class Last extends React.Component {
     const submitForm = (e) => {
       e.preventDefault();
       const {email, emailConfirm} = e.target;
+      
+        return alert("Emails do not match!")
+      }
       }
     }
 
