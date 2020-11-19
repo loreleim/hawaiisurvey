@@ -7,6 +7,7 @@ export default class Last extends React.Component {
   render() {
 
     const submitForm = (e) => {
+      e.preventDefault();
       }
     }
 
