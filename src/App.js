@@ -17,6 +17,7 @@ import Approval from "./pages/approvalQuestions";
 import ApprovalSecond from "./pages/approvalQuestions/template2";
 import ApprovalThird from "./pages/approvalQuestions/template3";
 import Last from "./pages/lastPage";
+import ThankYou from "./pages/thankYou";
 
 class App extends React.Component {
   constructor(props) {
@@ -37,6 +38,7 @@ class App extends React.Component {
       approvalSecondShown: false,
       approvalThirdShown: false,
       lastShown: false,
+      thankShown: false,
       currentStep: 0,
       nextStep: 0,
     };
@@ -67,6 +69,11 @@ class App extends React.Component {
       this.setState({multiShown: false});
       this.setState({contextShown: true});
     }
+  }
+
+  finalNext = () => {
+    this.setState({lastShown: false});
+    this.setState({thankShown: true});
   }
 
   contextNext = () => {
@@ -199,13 +206,17 @@ class App extends React.Component {
   }
 
   renderLast = () => {
-    return <Last/>
+    return <Last renderThank={this.finalNext}/>
+  }
+
+  renderThank = () => {
+    return <ThankYou/>
   }
 
   render
 
   render() {
-    const {homeShown, demographicShown, multiShown, contextShown, marineContextShown, marineApprovalShown, agricultureContextShown, militaryContextShown, militaryApprovalShown, artsContextShown, artsApprovalShown, approvalShown, approvalSecondShown, approvalThirdShown, lastShown, currentStep} = this.state;
+    const {homeShown, demographicShown, multiShown, contextShown, marineContextShown, marineApprovalShown, agricultureContextShown, militaryContextShown, militaryApprovalShown, artsContextShown, artsApprovalShown, approvalShown, approvalSecondShown, approvalThirdShown, lastShown, currentStep, thankShown} = this.state;
     return (
     <div className={style.appContainer}>
       <ProgressBar fill={currentStep / (store.totalSteps)}/>
@@ -224,6 +235,7 @@ class App extends React.Component {
       {approvalSecondShown && this.renderApprovalSecond()}
       {approvalThirdShown && this.renderApprovalThird()}
       {lastShown && this.renderLast()}
+      {thankShown && this.renderThank()}
     </div>
     )
   }
