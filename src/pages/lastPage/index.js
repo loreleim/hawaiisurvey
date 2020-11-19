@@ -6,7 +6,6 @@ export default class Last extends React.Component {
 
   render() {
 
-    console.log(store.userResponses)
     const submitForm = (e) => {
       }
     }
