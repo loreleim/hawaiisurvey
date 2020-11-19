@@ -12,14 +12,13 @@ export default class Demographic extends React.Component {
           <h1>{store.demographicQuestions[this.props.currentStep - 1].questionText}</h1>
           <p>{store.demographicQuestions[this.props.currentStep - 1].description}</p>
           {store.demographicQuestions[this.props.currentStep - 1].answerOptions.map((answerOptions) => (
-            <button
+            <button key={answerOptions.answerText}
               onClick={() => this.props.demoStep(answerOptions.answerText)}
             >
               {answerOptions.answerText}
             </button>
           ))}
         </div>
-        <div className={style.buttonContainer}><button onClick={this.props.backFunction}>🡐</button></div>
       </div>
     );
   }
