@@ -53,7 +53,11 @@ class Database {
       ]
 
       this.context = [
-        "in the following questions regarding industries in Hawai'i, you will be asked to give an approval or disapproval rating."
+        "in the following questions regarding industries in Hawai'i, you will be asked to give an approval or disapproval rating.",
+        "As reported by a 2018 NOAA ENOW study, Hawai'i's economy has a strong dependency on the ocean. Majority is still tourism based ocean recreation. We'll now gauge your approval ratings on ocean industries.",
+        "The next few questions ask of your approval ratings on local agriculture",
+        "Now here are some questions about military presence in Hawai'i ",
+        "And finally, some architectural and arts & culture questions"
       ]
   
       this.approvalQuestions = [
