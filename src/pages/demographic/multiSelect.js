@@ -4,6 +4,10 @@ import store from "../../database/database.js";
 
 export default class MultiSelect extends React.Component {
 
+  state = {
+    ethnicityArray:[]
+  }
+
   render() {
 
     return (
