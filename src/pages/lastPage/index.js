@@ -34,7 +34,6 @@ export default class Last extends React.Component {
             </tr>
           ))}
         </table>
-        <div className={style.backContainer}><button onClick={this.props.backFunction}>🡐</button></div>
         <form onSubmit={submitForm}>
         </form>
       </div>
