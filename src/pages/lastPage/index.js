@@ -10,8 +10,11 @@ export default class Last extends React.Component {
       e.preventDefault();
       const {email, emailConfirm} = e.target;
       
+      if (email.value !== emailConfirm.value) {
         return alert("Emails do not match!")
       }
+      if (email.value === emailConfirm.value) {
+        store.userResponses.push(email.value);
       }
     }
 
