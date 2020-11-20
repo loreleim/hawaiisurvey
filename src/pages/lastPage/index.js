@@ -32,6 +32,36 @@ export default class Last extends React.Component {
       }
     }
 
+    const editResponse = (e, index) => {
+      /*Age Toggle */
+      if (index === 0) {
+        console.log(e)
+      }
+
+      /*Pronouns Toggle */
+      if (index === 1) {
+        console.log(e)
+      }
+
+      /*Lived in Hawai'i*/
+      if (index === 2 && e === "Yes") {
+        console.log(store.userResponses)
+      }
+
+      /*Disapprove Toggle*/
+      if (e === "disapprove") {
+        console.log("the button is disapprove")
+      }
+
+      /*Approve Toggle*/
+      if (e === "approve") {
+        console.log("the button is approve")
+      }
+      console.log (index)
+
+      /**/
+    }
+
     return (
       <div className={style.lastContainer}>
         <h2>Review or edit your responses</h2>
