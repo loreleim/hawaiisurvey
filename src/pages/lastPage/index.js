@@ -71,9 +71,8 @@ export default class Last extends React.Component {
             <th>Answer</th>
           </tr>
           {store.userResponses.map((userResponses, index) => (
-            <tr>
               <td>{store.reviewQuestions[index]}</td>
-              <td>{userResponses}</td>
+              <td><button onClick={() => editResponse(userResponses, index)}>{userResponses}</button></td>
             </tr>
           ))}
         </table>
