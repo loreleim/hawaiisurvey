@@ -6,7 +6,7 @@ export default class Last extends React.Component {
 
   render() {
 
-    const submitForm = (e) => {
+    const submitForm = async (e) => {
       e.preventDefault();
       const {email, emailConfirm} = e.target;
       
@@ -15,6 +15,19 @@ export default class Last extends React.Component {
       }
       if (email.value === emailConfirm.value) {
         store.userResponses.push(email.value);
+        try {
+          const response = await fetch(process.env.REACT_APP_GOOGLE_KEY, {
+            method: 'POST',
+            headers: {
+              'Content-Type': 'application/json'
+            },
+            body: JSON.stringify([store.userResponses])
+          });
+          await response.json()
+          //set Data here
+        } catch (err) {
+          console.log(err)
+        }
         this.props.renderThank();
       }
     }
