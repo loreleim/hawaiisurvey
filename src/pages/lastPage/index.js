@@ -67,14 +67,18 @@ export default class Last extends React.Component {
         console.log(store.userResponses)
       }
 
-      /*Disapprove Toggle*/
-      if (e === "disapprove") {
-        console.log("the button is disapprove")
+      /*No Toggle*/
+      if (e === "No") {
+        const newArray = [...store.userResponses];
+        newArray[index] = "Yes";
+        this.setState({localArray: newArray})
       }
 
       /*Approve Toggle*/
       if (e === "approve") {
-        console.log("the button is approve")
+        const newArray = [...store.userResponses];
+        newArray[index] = "disapprove";
+        this.setState({localArray: newArray})
       }
       console.log (index)
 
