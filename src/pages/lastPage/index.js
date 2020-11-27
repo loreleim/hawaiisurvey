@@ -4,6 +4,13 @@ import store from "../../database/database.js";
 import Popup from "./popup";
 
 export default class Last extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      localArray: store.userResponses,
+      popupShown: false,
+    }
+  }
 
   render() {
 
