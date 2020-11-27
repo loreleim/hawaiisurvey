@@ -1,6 +1,7 @@
 import React from "react";
 import style from "./index.module.scss";
 import store from "../../database/database.js";
+import Popup from "./popup";
 
 export default class Last extends React.Component {
 
