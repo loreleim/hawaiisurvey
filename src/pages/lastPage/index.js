@@ -40,7 +40,26 @@ export default class Last extends React.Component {
 
       /*Pronouns Toggle */
       if (index === 1) {
-        console.log(e)
+        if (e === "She/Her/Hers") {
+          const newArray = [...store.userResponses];
+          newArray[index] = "He/Him/His";
+          this.setState({localArray: newArray})
+        }
+        if (e === "He/Him/His") {
+          const newArray = [...store.userResponses];
+          newArray[index] = "They/Them/Theirs";
+          this.setState({localArray: newArray})
+        }
+        if (e === "They/Them/Theirs") {
+          const newArray = [...store.userResponses];
+          newArray[index] = "Other";
+          this.setState({localArray: newArray})
+        }
+        if (e === "Other") {
+          const newArray = [...store.userResponses];
+          newArray[index] = "She/Her/Hers";
+          this.setState({localArray: newArray})
+        }
       }
 
       /*Lived in Hawai'i*/
