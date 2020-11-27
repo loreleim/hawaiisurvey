@@ -1,18 +1,18 @@
 {
   "files": {
-    "main.css": "/hawaiisurvey2020/static/css/main.1aba95ae.chunk.css",
-    "main.js": "/hawaiisurvey2020/static/js/main.8c1225b4.chunk.js",
-    "main.js.map": "/hawaiisurvey2020/static/js/main.8c1225b4.chunk.js.map",
-    "runtime-main.js": "/hawaiisurvey2020/static/js/runtime-main.7624d6ff.js",
-    "runtime-main.js.map": "/hawaiisurvey2020/static/js/runtime-main.7624d6ff.js.map",
-    "static/js/2.2ad5e28e.chunk.js": "/hawaiisurvey2020/static/js/2.2ad5e28e.chunk.js",
-    "static/js/2.2ad5e28e.chunk.js.map": "/hawaiisurvey2020/static/js/2.2ad5e28e.chunk.js.map",
-    "index.html": "/hawaiisurvey2020/index.html",
-    "static/css/main.1aba95ae.chunk.css.map": "/hawaiisurvey2020/static/css/main.1aba95ae.chunk.css.map",
-    "static/js/2.2ad5e28e.chunk.js.LICENSE.txt": "/hawaiisurvey2020/static/js/2.2ad5e28e.chunk.js.LICENSE.txt"
+    "main.css": "/hawaiisurvey/static/css/main.1aba95ae.chunk.css",
+    "main.js": "/hawaiisurvey/static/js/main.8c1225b4.chunk.js",
+    "main.js.map": "/hawaiisurvey/static/js/main.8c1225b4.chunk.js.map",
+    "runtime-main.js": "/hawaiisurvey/static/js/runtime-main.0a2b92b6.js",
+    "runtime-main.js.map": "/hawaiisurvey/static/js/runtime-main.0a2b92b6.js.map",
+    "static/js/2.2ad5e28e.chunk.js": "/hawaiisurvey/static/js/2.2ad5e28e.chunk.js",
+    "static/js/2.2ad5e28e.chunk.js.map": "/hawaiisurvey/static/js/2.2ad5e28e.chunk.js.map",
+    "index.html": "/hawaiisurvey/index.html",
+    "static/css/main.1aba95ae.chunk.css.map": "/hawaiisurvey/static/css/main.1aba95ae.chunk.css.map",
+    "static/js/2.2ad5e28e.chunk.js.LICENSE.txt": "/hawaiisurvey/static/js/2.2ad5e28e.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
-    "static/js/runtime-main.7624d6ff.js",
+    "static/js/runtime-main.0a2b92b6.js",
     "static/js/2.2ad5e28e.chunk.js",
     "static/css/main.1aba95ae.chunk.css",
     "static/js/main.8c1225b4.chunk.js"
