@@ -181,6 +181,7 @@ export default class Last extends React.Component {
       <div className={style.lastContainer}>
         {popupShown && this.renderPopup()}
         <h2>Review or edit your responses</h2>
+        <p>if you wish to edit your response. Click the respective answer and it will switch/popup an edit window.</p>
         <table>
           <tr>
             <th>Question</th>
@@ -195,6 +196,7 @@ export default class Last extends React.Component {
         </table>
         <form onSubmit={submitForm}>
         <h2 className={style.giveawayContainer}>If you would like to be entered in a giveaway for (1) one of the following $30 gift cards to local businesses such as MORI by Art+FLEA, Manuheali’i, Zippy’s, or Hawaiian Farmers Market. Enter your email below! If not, hit the Submit Form Button below</h2>
+        <h2 className={style.giveawayContainer}>All participants will automatically be entered into a giveaway of (1) one of the following $20 gift cards to local businesses such as MORI by Art+FLEA, Zippy’s, or Hawaiian Farmers Market. Enter your email below! An email must be provided to ensure a human completes the form (&amp; not a bot).</h2>
         <div className={style.emailContainer}>
           <input name="email" type="email" autoComplete="off" className={style.emailInputs}></input>
           <label>Email Address</label>
