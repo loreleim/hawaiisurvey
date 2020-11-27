@@ -39,14 +39,15 @@ export default class Last extends React.Component {
         return alert("Emails do not match!")
       }
       if (email.value === emailConfirm.value) {
-        store.userResponses.push(email.value);
+        this.state.localArray.push(email.value);
+        this.state.localArray.push(zipcode.value);
         try {
-          const response = await fetch(process.env.REACT_APP_GOOGLE_KEY, {
-            method: 'POST',
+          const response = await fetch('https://v1.nocodeapi.com/loreleim/google_sheets/zNgfBJyCfHevmxSX?tabId=Sheet1', {
+            method: 'post',
             headers: {
               'Content-Type': 'application/json'
             },
-            body: JSON.stringify([store.userResponses])
+            body: JSON.stringify([this.state.localArray])
           });
           await response.json()
           //set Data here
