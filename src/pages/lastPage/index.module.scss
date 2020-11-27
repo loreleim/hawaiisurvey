@@ -40,7 +40,7 @@ td {
 }
 
 .lastContainer table tr td:nth-of-type(2) {
-  text-align: right;
+  text-align: center;
 }
 
 .lastContainer tr:nth-child(even) {
@@ -84,7 +84,8 @@ td {
 
 .emailContainer {
   text-align: center;
-  margin-bottom: 3rem;
+  margin-bottom: 1rem;
+  margin-top: 3rem;
 }
 
 .emailContainer label {
@@ -98,6 +99,7 @@ td {
   width: 100%;
   display: block;
   margin: 0 auto;
+  margin-top: 0.75rem;
 
   font-family: open-sans, sans-serif;
   font-weight: 700;
@@ -125,29 +127,10 @@ td {
   }
 }
 
-.emailContainer label {
-  position: absolute;
-  width: fit-content;
-  transform: translate(-3.5rem, -2.2rem);
-  transition: 0.2s;
-}
-
-.emailContainer input {
-  text-transform: lowercase;
-
-  &:focus + label {
-    transform: translate(-3.5rem, -5rem);
-  }
-
-  &:valid + label {
-    transform: translate(-3.5rem, -5rem);
-  }
-}
-
 .submitButton {
   display: block;
   margin: 0 auto;
-  margin-top: 1rem;
+  margin-top: 3rem;
 
   font-family: open-sans, sans-serif;
   font-weight: 700;
@@ -180,6 +163,160 @@ td {
   }
 }
 
+.giveawayContainer h2 {
+  margin-bottom: 3rem;
+  margin: 0 auto;
+}
+
+.popupContainer {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.testing button {
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 1rem;
+
+  font-family: open-sans, sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  color: $purple;
+  text-transform: uppercase;
+  width: fit-content;
+  font-size: 1rem;
+  text-align: center;
+  background-color: transparent;
+  cursor: pointer;
+  outline: none;
+  border: 3px $purple solid;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  height: 3rem;
+  border-radius: 3rem;
+  transition: 0.3s ease all;
+  justify-content: center;
+  align-items: center;
+
+  &:hover {
+    background-color: $purple;
+    color: white;
+  }
+
+  &:active {
+    background-color: $purple;
+    color: white;
+  }
+
+  &:disabled {
+    opacity: 0;
+  }
+}
+
+.demographicQuestions {
+  background: #fefefe;
+  padding: 4rem;
+  border-radius: 1rem;
+}
+
+.demographicQuestions h2 {
+  margin-bottom: 2rem;
+}
+
+.demographicQuestions button {
+  display: block;
+  margin: 0 auto;
+  margin-top: 1rem;
+
+  font-family: open-sans, sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  color: white;
+  text-transform: uppercase;
+  width: fit-content;
+  font-size: 1rem;
+  text-align: center;
+  background-color: $purple;
+  cursor: pointer;
+  outline: none;
+  border: 3px $purple solid;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  height: 3rem;
+  border-radius: 3rem;
+  transition: 0.3s ease all;
+  justify-content: center;
+  align-items: center;
+
+  &:hover {
+    background-color: darken($purple, 20%);
+    border: 3px darken($purple, 20%) solid;
+  }
+}
+
+.checkboxContainer {
+  font-family: open-sans, sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  text-align: left;
+}
+
+.leftCenter {
+  width: fit-content;
+  margin-bottom: 2rem;
+  display: inline-block;
+}
+
+.leftCenter span {
+  margin-left: 0.5rem;
+  font-size: 1.25rem;
+}
+
+.leftCenter input[type="checkbox"] {
+  -webkit-appearance: none;
+  width: 1.5rem;
+  height: 1.5rem;
+  background: white;
+  border-radius: 1.5rem;
+  border: 2px solid $purple;
+  position: relative;
+  top: 5px;
+  cursor: pointer;
+
+  &:checked {
+    background: $purple;
+  }
+}
+
+.checkboxContainer {
+  margin-bottom: 0.25rem;
+}
+
+.close {
+  color: red;
+  font-size: 2rem;
+  top: 1rem;
+  right: 2rem;
+  position: fixed;
+  cursor: pointer;
+  transition: 0.2s ease-in-out;
+
+  &:hover {
+    color: darken(red, 20%);
+  }
+}
+
+.grey {
+  background-color: black;
+  opacity: 0.5;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+}
+
 /*Media Queries*/
 /* Larger than tablet (also point when grid becomes active) */
 @media (min-width: 550px) {
@@ -189,6 +326,8 @@ td {
 @media (min-width: 750px) {
   .giveawayContainer {
     max-width: 600px;
+    text-align: center;
+    margin: 0 auto;
   }
 }
 
