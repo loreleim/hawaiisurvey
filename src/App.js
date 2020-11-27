@@ -213,8 +213,6 @@ class App extends React.Component {
     return <ThankYou/>
   }
 
-  render
-
   render() {
     const {homeShown, demographicShown, multiShown, contextShown, marineContextShown, marineApprovalShown, agricultureContextShown, militaryContextShown, militaryApprovalShown, artsContextShown, artsApprovalShown, approvalShown, approvalSecondShown, approvalThirdShown, lastShown, currentStep, thankShown} = this.state;
     return (
