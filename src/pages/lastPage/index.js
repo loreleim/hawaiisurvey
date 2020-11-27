@@ -25,6 +25,10 @@ export default class Last extends React.Component {
     this.setState({popupShown: !popupShown})
   }
 
+  renderPopup = () => {
+    return <Popup closePopupFunction={this.closePopup} saveEthnicityFunction={this.saveEthnicity}/>
+  }
+
   render() {
 
     const submitForm = async (e) => {
