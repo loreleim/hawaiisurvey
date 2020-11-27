@@ -112,9 +112,11 @@ export default class Last extends React.Component {
         }
       }
 
-      /*Lived in Hawai'i*/
-      if (index === 2 && e === "Yes") {
-        console.log(store.userResponses)
+      /*Yes Toggle*/
+      if (e === "Yes") {
+        const newArray = [...store.userResponses];
+        newArray[index] = "No";
+        this.setState({localArray: newArray})
       }
 
       /*No Toggle*/
