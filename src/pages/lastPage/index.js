@@ -16,6 +16,15 @@ export default class Last extends React.Component {
     const {popupShown} = this.state;
     this.setState({popupShown: !popupShown})
   }
+
+  saveEthnicity = (e) => {
+    const newArray = [...store.userResponses];
+    newArray[4] = e;
+    this.setState({localArray: newArray})
+    const {popupShown} = this.state;
+    this.setState({popupShown: !popupShown})
+  }
+
   render() {
 
     const submitForm = async (e) => {
