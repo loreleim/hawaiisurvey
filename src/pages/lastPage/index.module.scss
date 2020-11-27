@@ -32,7 +32,11 @@ td {
 }
 
 .lastContainer table tr th:nth-of-type(2) {
-  text-align: right;
+  text-align: center;
+}
+
+.reviewButtons {
+  padding: 0.5rem;
 }
 
 .lastContainer table tr td:nth-of-type(2) {
