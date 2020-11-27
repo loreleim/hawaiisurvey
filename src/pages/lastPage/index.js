@@ -33,7 +33,7 @@ export default class Last extends React.Component {
 
     const submitForm = async (e) => {
       e.preventDefault();
-      const {email, emailConfirm} = e.target;
+      const {email, emailConfirm, zipcode} = e.target;
       
       if (email.value !== emailConfirm.value) {
         return alert("Emails do not match!")
