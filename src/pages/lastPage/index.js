@@ -133,6 +133,12 @@ export default class Last extends React.Component {
         this.setState({localArray: newArray})
       }
 
+      /*Disapprove Toggle*/
+      if (e === "disapprove") {
+        const newArray = [...store.userResponses];
+        newArray[index] = "approve";
+        this.setState({localArray: newArray})
+      }
     }
 
     return (
