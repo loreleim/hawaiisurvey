@@ -169,10 +169,17 @@ export default class Last extends React.Component {
         }
       }
 
+      if (index === 4) {
+        this.setState({popupShown: !popupShown})
+        this.renderPopup();
+      }
     }
+
+    const {popupShown} = this.state;
 
     return (
       <div className={style.lastContainer}>
+        {popupShown && this.renderPopup()}
         <h2>Review or edit your responses</h2>
         <table>
           <tr>
