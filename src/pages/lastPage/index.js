@@ -132,9 +132,7 @@ export default class Last extends React.Component {
         newArray[index] = "disapprove";
         this.setState({localArray: newArray})
       }
-      console.log (index)
 
-      /**/
     }
 
     return (
