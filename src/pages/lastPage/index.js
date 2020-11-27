@@ -139,6 +139,36 @@ export default class Last extends React.Component {
         newArray[index] = "approve";
         this.setState({localArray: newArray})
       }
+
+      /*Tourist Toggle*/
+      if (index === 9) {
+        if (e === "American West Coast Tourists") {
+          const newArray = [...store.userResponses];
+          newArray[index] = "American East Coast Tourists";
+          this.setState({localArray: newArray})
+        }
+        if (e === "American East Coast Tourists") {
+          const newArray = [...store.userResponses];
+          newArray[index] = "Japanese Tourists";
+          this.setState({localArray: newArray})
+        }
+        if (e === "Japanese Tourists") {
+          const newArray = [...store.userResponses];
+          newArray[index] = "Canadian Tourists";
+          this.setState({localArray: newArray})
+        }
+        if (e === "Canadian Tourists") {
+          const newArray = [...store.userResponses];
+          newArray[index] = "European Tourists";
+          this.setState({localArray: newArray})
+        }
+        if (e === "European Tourists") {
+          const newArray = [...store.userResponses];
+          newArray[index] = "American West Coast Tourists";
+          this.setState({localArray: newArray})
+        }
+      }
+
     }
 
     return (
