@@ -200,6 +200,7 @@ export default class Last extends React.Component {
         </table>
         <form onSubmit={submitForm}>
         <h2 className={style.giveawayContainer}>All participants will automatically be entered into a giveaway of (1) one of the following $20 gift cards to local businesses such as MORI by Art+FLEA, Zippy’s, or Hawaiian Farmers Market. Enter your email below! An email must be provided to ensure a human completes the form (&amp; not a bot).</h2>
+        <p>Limit one (1) survey &amp; giveaway entry per person</p>
         <div className={style.emailContainer}>
           <input name="email" type="email" autoComplete="off" className={style.emailInputs}></input>
           <label>Email Address</label>
