@@ -61,7 +61,31 @@ export default class Last extends React.Component {
     const editResponse = (e, index) => {
       /*Age Toggle */
       if (index === 0) {
-        console.log(e)
+        if (e === "19 and under") {
+          const newArray = [...store.userResponses];
+          newArray[index] = "20 to 29";
+          this.setState({localArray: newArray})
+        }
+        if (e === "20 to 29") {
+          const newArray = [...store.userResponses];
+          newArray[index] = "30 to 39";
+          this.setState({localArray: newArray})
+        }
+        if (e === "30 to 39") {
+          const newArray = [...store.userResponses];
+          newArray[index] = "40 to 49";
+          this.setState({localArray: newArray})
+        }
+        if (e === "40 to 49") {
+          const newArray = [...store.userResponses];
+          newArray[index] = "50 and over";
+          this.setState({localArray: newArray})
+        }
+        if (e === "50 and over") {
+          const newArray = [...store.userResponses];
+          newArray[index] = "19 and under";
+          this.setState({localArray: newArray})
+        }
       }
 
       /*Pronouns Toggle */
