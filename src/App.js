@@ -53,9 +53,7 @@ class App extends React.Component {
   demoNext = (pressedAnswer) => {
     this.setState({currentStep: this.state.currentStep + 1});
     store.userResponses.push(pressedAnswer);
-    console.log(store.userResponses);
     if (this.state.currentStep === store.demographicQuestions.length) {
-      console.log("multiselect should be shown")
       this.setState({demographicShown: false});
       this.setState({multiShown:true})
     }
@@ -109,7 +107,6 @@ class App extends React.Component {
   approvalNext = (pressedAnswer) => {
     this.setState({currentStep: this.state.currentStep + 1});
     store.userResponses.push(pressedAnswer);
-    console.log(store.userResponses);
     if (this.state.currentStep === 9) {
       this.setState({approvalShown: false});
       this.setState({approvalThirdShown: true});
@@ -135,7 +132,6 @@ class App extends React.Component {
       this.setState({artsContextShown: true});
     }
     if (this.state.currentStep === store.approvalQuestions.length + store.demographicQuestions.length + store.context.length - 1) {
-      console.log('this is the last step and the next page should show')
       this.setState({approvalShown: false});
       this.setState({artsApprovalShown: false});
       this.setState({lastShown: true});

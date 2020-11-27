@@ -14,7 +14,6 @@ export default class MultiSelect extends React.Component {
       let checkedEthnicity = e.target.value;
 
       if(e.target.checked) {
-        console.log("checked")
         this.setState({ethnicityArray: [...this.state.ethnicityArray, checkedEthnicity]})
       } 
       else {
