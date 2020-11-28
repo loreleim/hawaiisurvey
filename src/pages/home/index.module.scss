@@ -6,6 +6,8 @@
   left: 50%;
   transform: translate(-50%, -50%);
   text-align: center;
+  width: 100%;
+  padding: 2rem;
 }
 
 .homeText h2 {
@@ -51,6 +53,9 @@
 /*Media Queries*/
 /* Larger than tablet (also point when grid becomes active) */
 @media (min-width: 550px) {
+  .heroText {
+    width: 90%;
+  }
 }
 
 /* Larger than tablet */
@@ -59,6 +64,9 @@
 
 /* Larger than desktop */
 @media (min-width: 1000px) {
+  .homeText {
+    width: 60%;
+  }
   .homeText h1 {
     font-size: 5rem;
     margin-bottom: 1rem;

@@ -26,15 +26,6 @@
   -webkit-user-select: none;
 }
 
-.tourismContainer {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  text-align: center;
-  -webkit-user-select: none;
-}
-
 .approvalContainer h1,
 .approval2Container h1 {
   font-family: open-sans, sans-serif;
@@ -56,6 +47,17 @@
   margin: 0 auto;
 }
 
+.tourismContainer {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  -webkit-user-select: none;
+  width: 100%;
+  padding: 2rem;
+}
+
 .tourismContainer a {
   color: $purple;
 
@@ -73,12 +75,18 @@
   margin-bottom: 1rem;
 }
 
+.tourismQuestion {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
 #tourismContainer {
   text-align: center;
 }
 
 .linkData {
   margin-bottom: 1rem;
+  font-size: 0.8rem;
 }
 
 #tourismGroups button {
@@ -92,7 +100,7 @@
   color: $purple;
   text-transform: uppercase;
   width: fit-content;
-  font-size: 1rem;
+  font-size: 0.8rem;
   text-align: center;
   background-color: transparent;
   cursor: pointer;
@@ -148,20 +156,6 @@
   transition: 0.3s ease all;
   justify-content: center;
   align-items: center;
-
-  &:hover {
-    background-color: $purple;
-    color: white;
-  }
-
-  &:active {
-    background-color: $purple;
-    color: white;
-  }
-
-  &:disabled {
-    opacity: 0;
-  }
 }
 
 .optionsContainer h3 {
@@ -221,6 +215,30 @@
 
 /* Larger than tablet */
 @media (min-width: 750px) {
+  .approvalContainer button,
+  .approval2Container button {
+    &:hover {
+      background-color: $purple;
+      color: white;
+    }
+
+    &:active {
+      background-color: $purple;
+      color: white;
+    }
+
+    &:disabled {
+      opacity: 0;
+    }
+  }
+
+  .linkData {
+    font-size: 1rem;
+  }
+
+  #tourismGroups button {
+    font-size: 1rem;
+  }
 }
 
 /* Larger than desktop */

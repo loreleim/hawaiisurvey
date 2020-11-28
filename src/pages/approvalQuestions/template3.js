@@ -7,7 +7,7 @@ class ApprovalThird extends React.Component {
         return (
             <div>
                 <div className={style.tourismContainer}>
-                <h2 className={style.approvalLast}>Which tourist groups' spending, visiting, or environmental-care habits do you approve of most?</h2>
+                <h2 className={style.tourismQuestion}>Which tourist groups' spending, visiting, or environmental-care habits do you approve of most?</h2>
                 <p className={style.linkData}>This data is pulled from the top 5 vistor groups reported from the <a href="https://files.hawaii.gov/dbedt/visitor/visitor-research/2019-annual-visitor.pdf" rel="noreferrer" target="_blank">Hawai'i Transit Authority's 2019 Tourism Report.</a></p>
                     <div className={style.optionsContainer} id={style.tourismGroups}>
                         <button onClick={() => this.props.nextPage(store.tourismGroups[0])}>{store.tourismGroups[0]}</button>

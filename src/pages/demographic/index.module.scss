@@ -6,6 +6,7 @@
   left: 50%;
   transform: translate(-50%, -50%);
   text-align: center;
+  width: 100%;
 }
 
 .demographicQuestions h1 {
@@ -21,6 +22,9 @@
 
 .demographicQuestions p {
   margin-bottom: 1rem;
+  font-size: 0.75rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
 }
 
 .demographicQuestions button {
@@ -47,20 +51,6 @@
   transition: 0.3s ease all;
   justify-content: center;
   align-items: center;
-
-  &:hover {
-    background-color: $purple;
-    color: white;
-  }
-
-  &:active {
-    background-color: $purple;
-    color: white;
-  }
-
-  &:disabled {
-    opacity: 0;
-  }
 }
 
 .buttonContainer button {
@@ -84,18 +74,6 @@
   left: 1rem;
   bottom: 1rem;
   position: absolute;
-
-  &:hover {
-    background-color: darken($purple, 20%);
-  }
-
-  &:active {
-    background-color: darken($purple, 30%);
-  }
-
-  &:disabled {
-    opacity: 0;
-  }
 }
 
 .checkboxContainer {
@@ -139,14 +117,43 @@
 /*Media Queries*/
 /* Larger than tablet (also point when grid becomes active) */
 @media (min-width: 550px) {
+  .demographicQuestions p {
+    font-size: 1rem;
+    padding-left: 0rem;
+    padding-right: 0rem;
+  }
 }
 
 /* Larger than tablet */
 @media (min-width: 750px) {
+  .demographicQuestions button {
+    &:hover {
+      background-color: $purple;
+      color: white;
+    }
+
+    &:focus {
+      background-color: $purple;
+      color: white;
+    }
+  }
+
+  .buttonContainer button {
+    &:hover {
+      background-color: darken($purple, 20%);
+    }
+
+    &:focus {
+      background-color: darken($purple, 30%);
+    }
+  }
 }
 
 /* Larger than desktop */
 @media (min-width: 1000px) {
+  .demographicQuestions {
+    width: 60%;
+  }
   .homeText h1 {
     font-size: 5rem;
     margin-bottom: 1rem;
