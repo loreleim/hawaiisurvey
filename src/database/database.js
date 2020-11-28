@@ -45,8 +45,9 @@ class Database {
             { answerText: "Black / African American" },
             { answerText: "Pacific Islander" },
             { answerText: "Mixed Race" },
-            { answerText: "Unknown" },
-            { answerText: "Prefer to Self Describe" },
+            { answerText: "White / Caucasian" },
+            { answerText: "Hispanic / Latinx" },
+            { answerText: "Middle Eastern / North African" },
             { answerText: "Do not wish to answer" }
           ]
         }
