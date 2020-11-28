@@ -95,7 +95,7 @@ class Database {
         "non-local business chains building on local land",
         "developments designed by mainland architects",
         "developments designed by local architects",
-        "Studios filming TV Shows/Movies on the islands",
+        "studios filming TV Shows/Movies on the islands",
         "the portrayal of Hawai'i on fictional media", 
       ];
 
